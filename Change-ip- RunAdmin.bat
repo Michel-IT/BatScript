@@ -1,4 +1,11 @@
 @ECHO off
+::========================================================================
+:: This Script Bat designed by Michel Marrazzo, 
+:: its use simplifies and speeds up the ip change on "Microsoft Windows"
+::
+:: Tested on Win10
+:: Please do not remove comment.
+::========================================================================
 set PERIFERIC=Wi-Fi
 
 set IP1=192.168.1.53
