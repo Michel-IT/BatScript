@@ -1,4 +1,9 @@
 @echo off
+:: COMMENT
+:: © 2012 https://github.com/Michel-IT. All rights reserved.
+:: You can use this file and disclose it. 
+:: Please do not remove this comment. 
+:: Out of respect for intellectual property.
 
 SET IP=192.168.178.1
 :: SET FRITZUSER=fritz1234 
