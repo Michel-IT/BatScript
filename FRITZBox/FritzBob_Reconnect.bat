@@ -1,8 +1,8 @@
 @echo off
 
 SET IP=192.168.178.1
-::SET FRITZUSER=fritz1234 
-::SET FRITZPW=password1234
+:: SET FRITZUSER=fritz1234 
+:: SET FRITZPW=password1234 
 SET location=/igdupnp/control/WANIPConn1
 SET uri=urn:schemas-upnp-org:service:WANIPConnection:1
 SET action=ForceTermination
