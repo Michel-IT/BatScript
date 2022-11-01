@@ -1,4 +1,5 @@
 # Modem FRITZBox
 
 ## Function
-- FRITZBox_Reboot.bat - Reboot - :white_check_mark:FRITZBox 7530 Test OK
+- FRITZBox_Reboot.bat - Reboot - :x:FRITZBox 7530 Test Windows KO
+  -- Fix Curl String
