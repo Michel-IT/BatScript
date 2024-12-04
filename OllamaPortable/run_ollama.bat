@@ -12,6 +12,10 @@ set "APPDATA=%OLLAMA_ROOT%\AppData"
 set "LOCALAPPDATA=%OLLAMA_ROOT%\AppData\Local"
 set "PATH=%OLLAMA_ROOT%\Programs\Ollama;%PATH%"
 
+:: Set CUDA environment variables
+::set "CUDA_LAUNCH_BLOCKING=1"
+::set "CUDA_VISIBLE_DEVICES=0"
+
 :: Check if Ollama is already running
 tasklist /FI "IMAGENAME eq ollama.exe" 2>NUL | find /I /N "ollama.exe">NUL
 if "%ERRORLEVEL%"=="0" (
