@@ -5,18 +5,32 @@ cls
 echo ===================================
 echo      OpenWebUI - Menu Principale
 echo ===================================
-echo 1. Installa Open WebUI
-echo 2. Avvia Open WebUI
-echo 3. Disattiva ambiente virtuale
-echo 4. Disinstalla Open WebUI
-echo 5. Esci
+echo 1. Avvia Open WebUI
+echo 2. Installa Open WebUI
+echo 3. Aggiorna Open WebUI
+echo 4. Disattiva ambiente virtuale
+echo 5. Disinstalla Open WebUI
+echo 6. Esci
 echo ===================================
-choice /c 12345 /n /m "Seleziona un'opzione (1-5): "
-if errorlevel 5 goto :eof
-if errorlevel 4 goto uninstall
-if errorlevel 3 goto deactivate
-if errorlevel 2 goto run
-if errorlevel 1 goto install
+choice /c 123456 /n /m "Seleziona un'opzione (1-6): "
+if errorlevel 6 goto :eof
+if errorlevel 5 goto uninstall
+if errorlevel 4 goto deactivate
+if errorlevel 3 goto update
+if errorlevel 2 goto install
+if errorlevel 1 goto run
+
+:run
+echo.
+echo ===================================
+echo Avvio OpenWebUI...
+echo Per terminare l'applicazione, premere CTRL+C
+echo ===================================
+start http://localhost:8080
+conda activate openwebui && open-webui serve
+cmd /k
+pause
+goto menu
 
 :install
 echo.
@@ -50,16 +64,21 @@ echo Installazione completata con successo!
 pause
 goto menu
 
-:run
+:update
 echo.
 echo ===================================
-echo Avvio OpenWebUI...
-echo Per terminare l'applicazione, premere CTRL+C
+echo Aggiornamento di OpenWebUI...
 echo ===================================
-start http://localhost:8080
-conda activate openwebui && open-webui serve
-cmd /k
+echo Attivazione ambiente virtuale...
+call conda activate openwebui
+
+echo Aggiornamento OpenWebUI...
+call pip install --upgrade open-webui
+
+echo.
+echo Aggiornamento completato con successo!
 pause
+goto menu
 
 :deactivate
 echo.
