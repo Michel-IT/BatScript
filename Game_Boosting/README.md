@@ -1,7 +1,5 @@
 # Windows Gaming Optimization Scripts
 
-![Gaming Optimization Banner](https://i.imgur.com/YourBannerImage.png)
-
 ## Overview
 
 This repository contains batch scripts designed to optimize Windows 10 and Windows 11 for gaming performance. These scripts implement various tweaks and optimizations that can help reduce system overhead and improve frame rates in games.
