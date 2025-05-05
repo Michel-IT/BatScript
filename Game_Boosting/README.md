@@ -1,5 +1,11 @@
 # Windows Gaming and Network Optimization
 
+## Creator
+**Michel Marrazzo**
+
+## Disclaimer
+This script is provided "as is" without warranty of any kind. The creator does not take any responsibility for any damage or issues that may arise from using this script. Use at your own risk.
+
 ## Overview
 
 This repository contains an interactive batch script designed to optimize Windows 10 and Windows 11 for gaming and network performance. The script implements various tweaks and optimizations that can help reduce system overhead, improve network responsiveness, and enhance frame rates in games.
@@ -64,7 +70,7 @@ This script has been tested on:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is released under an open and free license. You are free to use, modify, and distribute this script as you wish.
 
 ## Acknowledgements
 

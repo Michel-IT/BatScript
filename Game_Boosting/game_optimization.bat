@@ -2,8 +2,18 @@
 setlocal enabledelayedexpansion
 
 :: Multilingual Interactive Gaming and Network Optimization Script
+:: Creator: Michel Marrazzo
 :: Version: 1.0
 :: Last Updated: 2025-05-05
+::
+:: DISCLAIMER:
+:: This script is provided "as is" without warranty of any kind.
+:: The creator does not take any responsibility for any damage or issues
+:: that may arise from using this script. Use at your own risk.
+::
+:: LICENSE:
+:: This script is released under an open and free license.
+:: You are free to use, modify, and distribute this script as you wish.
 
 :: Initialize optimization flags
 set "NETWORK_TCP_ACK_FREQ=0"
