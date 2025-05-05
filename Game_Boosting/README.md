@@ -1,86 +1,71 @@
-# Windows Gaming Optimization Scripts
+# Windows Gaming and Network Optimization
 
 ## Overview
 
-This repository contains batch scripts designed to optimize Windows 10 and Windows 11 for gaming performance. These scripts implement various tweaks and optimizations that can help reduce system overhead and improve frame rates in games.
-
-## Scripts
-
-The repository includes four optimization scripts:
-
-- **optimize_win10.bat** - Optimization script for Windows 10 (Italian)
-- **optimize_win11.bat** - Optimization script for Windows 11 (Italian)
-- **optimize_win10_en.bat** - Optimization script for Windows 10 (English)
-- **optimize_win11_en.bat** - Optimization script for Windows 11 (English)
+This repository contains an interactive batch script designed to optimize Windows 10 and Windows 11 for gaming and network performance. The script implements various tweaks and optimizations that can help reduce system overhead, improve network responsiveness, and enhance frame rates in games.
 
 ## Features
 
-These scripts perform various optimizations including:
+The optimization script offers a comprehensive set of features:
 
-- Creating a system restore point for safety
-- Setting high performance power profile
-- Disabling unnecessary Windows services
-- Optimizing Windows Defender scheduling
-- Disabling telemetry and user experience programs
-- Configuring visual effects for performance
-- Optimizing mouse settings for gaming
-- Activating Game Mode
-- Disabling Game DVR and Game Bar
-- Disabling NTFS last access time updates
-- Optimizing background processes
+- **Multilingual Support**: Available in both English and Italian
+- **Windows Version Support**: Compatible with both Windows 10 and Windows 11
+- **Network Optimizations**:
+  - TCP/IP parameter tweaks for specific network interfaces
+  - Global TCP/IP optimizations
+  - Reduced network latency for gaming
+- **System Optimizations**:
+  - Optional Windows Defender management
+  - Background service optimization
+  - Telemetry and data collection control
+  - Notification management
+- **Gaming Optimizations**:
+  - Visual effects optimization (keeping only essential visual elements)
+  - High performance power plan configuration
+  - Mouse settings optimization for gaming
+  - Windows Game Mode activation
+  - Game DVR and Game Bar management
+  - Windows 10/11 specific optimizations
 
-## Configuration Options
+## Interactive User Interface
 
-Each script includes configuration options at the beginning that can be enabled (1) or disabled (0):
+The script features a fully interactive menu-driven interface that:
 
-```batch
-:: Disable Core Isolation (Memory Integrity) - Windows 11 only
-set DISABLE_CORE_ISOLATION=0
+1. Allows language selection (English/Italian)
+2. Offers system restore point creation at startup
+3. Provides network interface selection with GUID and IP display
+4. Presents categorized optimization options
+5. Gives detailed explanations for each optimization
+6. Shows current status of each optimization (ON/OFF)
+7. Allows selective application of optimizations
 
-:: Completely disable Windows Defender
-set DISABLE_DEFENDER=0
+## Usage
 
-:: Disable Hyper-V (Virtualization)
-set DISABLE_HYPERV=0
+1. Run the script as administrator
+2. Select your preferred language
+3. Choose your Windows version
+4. Decide whether to create a system restore point
+5. Select the network interface to optimize
+6. Browse through the optimization categories and enable desired tweaks
+7. Apply the selected optimizations
+8. Restart your computer for full effect
 
-:: Uninstall preinstalled Windows apps (Bloatware)
-set REMOVE_BLOATWARE=0
+## Warning
 
-:: Disable all visual effects
-set DISABLE_ALL_VISUAL_EFFECTS=0
+- Some optimizations may affect system functionality outside of gaming
+- Disabling security features like Windows Defender will make your system more vulnerable to malware
+- Always consider creating a system restore point before applying optimizations
 
-:: Disable non-essential Windows services
-set DISABLE_NONESSENTIAL_SERVICES=0
+## Compatibility
 
-:: Disable Xbox Game Bar and related services - Windows 10 only
-set DISABLE_XBOX_FEATURES=0
+This script has been tested on:
+- Windows 10 (21H2, 22H2)
+- Windows 11 (21H2, 22H2, 23H2)
 
-:: Disable NTFS updates (last access time)
-set DISABLE_NTFS_UPDATES=0
+## License
 
-
-#Usage
-
-Download the appropriate script for your Windows version and language preference
-Right-click the file and select "Run as administrator"
-Let the script complete its operations
-Restart your computer when prompted
-
-#Warning
-
-Always create a system restore point before running these scripts (they do this automatically)
-Some optimizations may affect system functionality outside of gaming
-Disabling security features like Windows Defender or Core Isolation will make your system more vulnerable to malware
-
-#Compatibility
-These scripts have been tested on:
-
-Windows 10 (21H2, 22H2)
-Windows 11 (21H2, 22H2, 23H2)
-
-#Contributing
-Feel free to fork this repository and submit pull requests with additional optimizations or improvements.
-License
 This project is licensed under the MIT License - see the LICENSE file for details.
-Acknowledgements
-These scripts were inspired by various gaming optimization guides and community knowledge. Special thanks to all the gamers and system tweakers who have shared their knowledge.
+
+## Acknowledgements
+
+This script was inspired by various gaming optimization guides and community knowledge. Special thanks to all the gamers and system tweakers who have shared their knowledge.
